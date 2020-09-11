@@ -1,3 +1,3 @@
 # mpca
 
-Atividades realizadas para o Mestrado Profissional em Computação aplicada
+Atividades realizadas para o Mestrado Profissional em Computação Aplicada
