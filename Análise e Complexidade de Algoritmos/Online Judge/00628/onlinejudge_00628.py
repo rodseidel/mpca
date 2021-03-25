@@ -18,7 +18,7 @@ def get_posicoes_tralha(regra):
     return posicoes_tralha
 
 def gera_sequencias_numericas_regra(regra):#produz as sequencias numericas
-  reg = regra.replace("0",".")
+  reg = regra#.replace("0",".")
   regras = []
   
   produto_cart_num = produto(["0","1","2","3","4","5","6","7","8","9"], reg.count("."))
@@ -74,7 +74,6 @@ while True:
     for _ in range(numeroPalavras):
       palavras.append(input())
 
-    print(palavras)
     
     numeroRegras = int(input())
     regras = []
@@ -82,24 +81,26 @@ while True:
     for _ in range(numeroRegras):
       regras.append(input())
 
-    print(regras)
 
     print("--")
     
     for r in (range(len(regras))):
       senhas = []
-      regras_expandidas = gera_sequencias_numericas_regra(regras[r])
+      reg = regras[r].replace("0",".")
 
-      if regras[r].find("#") != -1:
-        for i in range(len(regras_expandidas)):
-          senhas.extend(gera_senhas_regras_tralha(palavras,regras_expandidas[i]))
+      palavras_expandidas = []
+
+      if reg.find("#") != -1:
+        palavras_expandidas = gera_senhas_regras_tralha(palavras,reg)
       else:
-        senhas.extend(regras_expandidas)
-      
-      senhas.sort()
+        palavras_expandidas.append(reg)
 
+      for k in range(len(palavras_expandidas)):
+        senhas.extend(gera_sequencias_numericas_regra(palavras_expandidas[k]))
+      
       for j in range(len(senhas)):
         print(senhas[j])
+
 
   except EOFError:
     break
