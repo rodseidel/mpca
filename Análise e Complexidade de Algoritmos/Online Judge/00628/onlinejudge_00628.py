@@ -1,4 +1,5 @@
 from itertools import product
+#https://docs.python.org/3/library/itertools.html#itertools.product
 
 def produto(lista_palavras,num_posicoes):
   produto = []
