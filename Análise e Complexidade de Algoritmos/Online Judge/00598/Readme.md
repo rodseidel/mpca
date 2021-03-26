@@ -17,7 +17,7 @@ Exemplos de sucesso no uDebug são:
 >Herald-Tribune
 >Post
 >New Advocate
-
+# 
 >1
 >
 >\*
@@ -25,15 +25,15 @@ Exemplos de sucesso no uDebug são:
 >Jornal 2
 >Jornal 3
 >Jornal 4
-
+# 
 >1
-
+>
 >2 3
 >Times
 >Herald-Tribune
 >Post
 >New Advocate
-
+# 
 >2
 >
 >\*
@@ -45,13 +45,13 @@ Exemplos de sucesso no uDebug são:
 >Herald-Tribune
 >Post
 >New Advocate
-
+# 
 >2
 >
 >2
 >Rodrigo
 >Seidel
-
+>
 >\*
 >Jornal 1
 >Jornal 2
