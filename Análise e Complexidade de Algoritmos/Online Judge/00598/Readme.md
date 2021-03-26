@@ -2,7 +2,7 @@
 Rodrigo Seidel
 
 ## Breve explicação de como a técnica indicada foi utilizada
-Após entrada dos dados necessários, de acordo com a opção selecionada ('*', 'n' ou 'a b') são produzidas todas as combinações dos jornais indicados, de maneira ordenada e sem repetição.
+Após entrada dos dados necessários, organizando-se as opções selecionadas para cada dataset (pode ser informado mais de um), de acordo com a opção selecionada ('*', 'n' ou 'a b') são produzidas todas as combinações dos jornais indicados, de maneira ordenada e sem repetição.
 
 A técnica de pesquisa completa foi utilizada na produção de todas as combinações dos jornais indicados, de acordo com a opção selecioanda.
 
