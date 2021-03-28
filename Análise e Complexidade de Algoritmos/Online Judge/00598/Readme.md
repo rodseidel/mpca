@@ -18,50 +18,100 @@ O resultado impresso pelo programa passou no uDebug em diversos casos de teste, 
 Exemplos de sucesso no uDebug são:
 >1
 >
->\*
->Times
->Herald-Tribune
->Post
->New Advocate
-# 
->1
+> [branco]
 >
 >\*
+>
+>Times
+>
+>Herald-Tribune
+>
+>Post
+>
+>New Advocate
+>
+
+# 
+
+>1
+>
+> [branco]
+>
+>\*
+>
 >Jornal 1
+>
 >Jornal 2
+>
 >Jornal 3
+>
 >Jornal 4
+>
+
 # 
+
 >1
 >
->2 3
->Times
->Herald-Tribune
->Post
->New Advocate
-# 
->2
->
->\*
->Rodrigo
->Seidel
+> [branco]
 >
 >2 3
+>
 >Times
+>
 >Herald-Tribune
+>
 >Post
+>
 >New Advocate
+>
+
 # 
+
 >2
 >
->2
->Rodrigo
->Seidel
+> [branco]
 >
 >\*
+>
+>Rodrigo
+>
+>Seidel
+>
+> [branco]
+>
+>2 3
+>
+>Times
+>
+>Herald-Tribune
+>
+>Post
+>
+>New Advocate
+>
+
+# 
+
+>2
+>
+> [branco]
+>
+>2
+>
+>Rodrigo
+>
+>Seidel
+> 
+> [branco]
+>
+>\*
+>
 >Jornal 1
+>
 >Jornal 2
+>
 >Jornal 3
+>
 
 ## Análise da complexidade de tempo do programa desenvolvido
 
