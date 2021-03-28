@@ -1,4 +1,4 @@
-import math
+#import math
 
 n=65536 #65536 #chegamos ao maior valor acumulado de 2147516416, que contempla o maior i
 
