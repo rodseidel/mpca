@@ -5,13 +5,14 @@ n=65536 #65536 #chegamos ao maior valor acumulado de 2147516416, que contempla o
 #Fórmula para identificar a quantidade de dígitos de determinado número = int(math.log(x)+1)
 # 96 = 2
 # 115 = 3
+# ou simplesmente: len(str(x)) 
 
 qtd_algarismos_grupo = {1:1};
 historicoCalculos = {1:1};
 
 for i in range(2,n):
   #cache para calculo da quantidade de algarismos de um grupo, considerando o cálculo feito para o grupo anterior
-  qtd_algarismos_grupo[i] = qtd_algarismos_grupo.get(i-1) + int(math.log10(i)+1) 
+  qtd_algarismos_grupo[i] = qtd_algarismos_grupo.get(i-1) + len(str(i)) #int(math.log10(i)+1) 
   
   #cache para armazenar a total acumulado de quantidades do grupo, considerando o cálculo feito para o grupo anteiror
   historicoCalculos[i] = historicoCalculos.get(i-1) + qtd_algarismos_grupo.get(i)
