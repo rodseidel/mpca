@@ -19,16 +19,27 @@ A partir daí, para identificar o dígito localizado na posição i temos que:
 Para fazer isso, primeiro calculamos o comprimento de cada grupo de números.
 
 1 --> 1
+
 1 2 --> 2
+
 1 2 3 --> 3
+
 1 2 3 4 --> 4
+
 1 2 3 4 5 --> 5
+
 1 2 3 4 5 6 --> 6
+
 1 2 3 4 5 6 7 --> 7
+
 1 2 3 4 5 6 7 8 --> 8
+
 1 2 3 4 5 6 7 8 9 --> 9
+
 1 2 3 4 5 6 7 8 9 10 --> 11
+
 1 2 3 4 5 6 7 8 9 10 11 --> 13
+
 ...
 
 Depois calculamos a soma acumulada de cada um dos grupos de números.
@@ -36,19 +47,33 @@ Depois calculamos a soma acumulada de cada um dos grupos de números.
 A soma acumulada por cada grupo ajudará a identificar em que grupo está contido determinado 'i' pesquisado
 
 1 --> 1
+
 1 2 --> 3
+
 1 2 3 --> 6
+
 1 2 3 4 --> 10
+
 1 2 3 4 5 --> 15
+
 1 2 3 4 5 6 --> 21
+
 1 2 3 4 5 6 7 --> 28
+
 1 2 3 4 5 6 7 8 --> 36
+
 1 2 3 4 5 6 7 8 9 --> 45
+
 1 2 3 4 5 6 7 8 9 10 --> 56 (aqui o 10 conta 2 posições, chegando a 56, ou seja, é necessário identificar a quantidade de algarismos de um número!!!)
+
 1 2 3 4 5 6 7 8 9 10 11 --> 69
+
 1 2 3 4 5 6 7 8 9 10 11 12 --> 84
+
 1 2 3 4 5 6 7 8 9 10 11 12 13 --> 101
+
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 --> 120
+
 
 
 A pós submissão no Online Judge, o site apresentou "Runtime error", porém o uDegug apresenta sucesso para diversos casos de teste. O código também roda corretamente quando executado localmente.
