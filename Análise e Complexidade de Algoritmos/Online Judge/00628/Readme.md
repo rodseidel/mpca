@@ -1,5 +1,10 @@
-## Autor
+# Análise e Complexidade de Algoritmos
+
 Rodrigo Seidel
+
+PPComp — Campus Serra, Ifes
+
+2020-03
 
 ## Breve explicação de como a técnica indicada foi utilizada
 Após entrada dos dados necessários, foi primeiramente realizada o produto das senhas inicialmente inseridas, de acordo com os # das regras de formação informadas.
