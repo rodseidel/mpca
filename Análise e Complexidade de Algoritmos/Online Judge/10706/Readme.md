@@ -81,26 +81,45 @@ A pós submissão no Online Judge, o site apresentou "Runtime error", porém o u
 Por exemplo:
 
 > 10
+> 
 > 23421
+> 
 > 3543245
+> 
 > 35443
+> 
 > 3490494
+> 
 > 424214832
+> 
 > 23904234
+> 
 > 2433094
+> 
 > 345324
+> 
 > 1123
+> 
 > 58894883
 
 > 3
+> 
 > 1
+> 
 > 1
+> 
 > 9
+> 
 > 8
+> 
 > 6
+> 
 > 8
+> 
 > 2
+> 
 > 1
+> 
 > 0
 
 
@@ -114,4 +133,4 @@ No momento em que fiz isso, meu algoritmo retornava corretamente para 'i' pequen
 
 A partir daí comecei a tentar entender a lógica utilizada nesse algoritmo, observei minha falha (que estava em fazer o acúmulo considerando apenas valor absoluto do número, sem considerar a quantidade de algarismos que ele continha.
 
-A partir daí, atualizei o algoritmo que eu tinha criado.
+A partir daí, atualizei o algoritmo que eu tinha criado, de forma que pude confirmar que a busca que eu estava fazendo estava correta, o problema de fato estava na composição do cálculo acumulado.
