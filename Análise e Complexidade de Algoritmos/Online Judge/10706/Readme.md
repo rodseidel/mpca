@@ -128,7 +128,7 @@ Por exemplo:
 
 
 ## Outras informações que o autor julgar apropriadas para o entendimento do trabalho realizado
-Na print do submit, há para este problema uma submissão com Accepted. Esta foi uma implementação que localizei em C++, bem mais simples que a feita por mim, que não acreditei que teria sucesso após a transcrição para Python.
+No printscreen do veredito do submit, há para este problema uma submissão com Accepted. Esta foi uma implementação que localizei em C++, bem mais simples que a feita por mim, que não acreditei que teria sucesso após a transcrição para Python.
 No momento em que fiz isso, meu algoritmo retornava corretamente para 'i' pequeno, porém 'i' muito grande retornava um algarismo incorreto.
 
 A partir daí comecei a tentar entender a lógica utilizada nesse algoritmo, observei minha falha (que estava em fazer o acúmulo considerando apenas valor absoluto do número, sem considerar a quantidade de algarismos que ele continha).
