@@ -64,7 +64,7 @@ A soma acumulada por cada grupo ajudará a identificar em que grupo está contid
 
 1 2 3 4 5 6 7 8 9 --> 45
 
-1 2 3 4 5 6 7 8 9 10 --> 56 (aqui o 10 conta 2 posições, chegando a 56, ou seja, é necessário identificar a quantidade de algarismos de um número!!!)
+1 2 3 4 5 6 7 8 9 10 --> 56 (aqui o 10 conta 2 posições, chegando a 56, ou seja, é necessário considerar a quantidade de algarismos do número)
 
 1 2 3 4 5 6 7 8 9 10 11 --> 69
 
@@ -128,9 +128,9 @@ Por exemplo:
 
 
 ## Outras informações que o autor julgar apropriadas para o entendimento do trabalho realizado
-Na print do submit, há para este problema uma submissão com Accepted. Esta foi uma implementação que localizei em C++, bem menor que a feita por mim, que não acreditei que teria sucesso após a transcrição para Python.
-No momento em que fiz isso, meu algoritmo retornava corretamente para 'i' pequeno, porém 'i' muito grande falhava absurdamente.
+Na print do submit, há para este problema uma submissão com Accepted. Esta foi uma implementação que localizei em C++, bem mais simples que a feita por mim, que não acreditei que teria sucesso após a transcrição para Python.
+No momento em que fiz isso, meu algoritmo retornava corretamente para 'i' pequeno, porém 'i' muito grande retornava um algarismo incorreto.
 
-A partir daí comecei a tentar entender a lógica utilizada nesse algoritmo, observei minha falha (que estava em fazer o acúmulo considerando apenas valor absoluto do número, sem considerar a quantidade de algarismos que ele continha.
+A partir daí comecei a tentar entender a lógica utilizada nesse algoritmo, observei minha falha (que estava em fazer o acúmulo considerando apenas valor absoluto do número, sem considerar a quantidade de algarismos que ele continha).
 
 A partir daí, atualizei o algoritmo que eu tinha criado, de forma que pude confirmar que a busca que eu estava fazendo estava correta, o problema de fato estava na composição do cálculo acumulado.
