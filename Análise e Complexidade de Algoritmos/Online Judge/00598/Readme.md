@@ -1,8 +1,9 @@
 # Análise e Complexidade de Algoritmos
 
-## Autor
 Rodrigo Seidel
+
 PPComp — Campus Serra, Ifes
+
 2020-03
 
 
