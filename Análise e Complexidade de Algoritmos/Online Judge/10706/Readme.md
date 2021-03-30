@@ -75,8 +75,13 @@ A soma acumulada por cada grupo ajudará a identificar em que grupo está contid
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 --> 120
 
 
+A técnica Dividir e Conquistar foi utilizada por conta da divisão do problema em partes, de forma que não seja necessário gerar todo o número para se determinar qual algarismo está presente em determinada posição.
 
-A pós submissão no Online Judge, o site apresentou "Runtime error", porém o uDegug apresenta sucesso para diversos casos de teste. O código também roda corretamente quando executado localmente.
+A partir desta estrutura sumarizada, identifica-se a posição a ser expandida para que seja identificado o algarismo desejado.
+
+
+
+Após submissão no Online Judge, o site apresentou "Runtime error", porém o uDegug apresenta sucesso para diversos casos de teste. O código também roda corretamente quando executado localmente.
 
 Por exemplo:
 
@@ -122,6 +127,81 @@ Por exemplo:
 > 
 > 0
 
+#
+
+> 18 
+> 
+> 8 
+> 
+> 3 
+> 
+> 80 
+> 
+> 546 
+> 
+> 23423 
+> 
+> 65753 
+> 
+> 2345 
+> 
+> 45645756 
+> 
+> 546454 
+> 
+> 6786797 
+> 
+> 131231 
+> 
+> 78934124 
+> 
+> 68904565 
+> 
+> 123487907 
+> 
+> 5655 
+> 
+> 778888 
+> 
+> 101011 
+>
+> 2147483647
+
+> 2 
+> 
+> 2 
+> 
+> 0 
+> 
+> 2 
+> 
+> 3 
+> 
+> 1 
+> 
+> 5 
+> 
+> 5 
+> 
+> 2 
+> 
+> 5 
+> 
+> 9 
+> 
+> 7 
+> 
+> 5 
+> 
+> 7 
+> 
+> 1 
+> 
+> 5 
+> 
+> 5 
+> 
+> 2
 
 ## Análise da complexidade de tempo do programa desenvolvido
 
