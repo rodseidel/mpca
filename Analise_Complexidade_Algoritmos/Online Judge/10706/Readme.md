@@ -82,8 +82,10 @@ A partir desta estrutura sumarizada, identifica-se a posição a ser expandida p
 
 
 Após submissão no Online Judge, o site apresentou "Runtime error", porém o uDegug apresenta sucesso para diversos casos de teste. O código também roda corretamente quando executado localmente.
+OBS.: o primeiro teste do uDebug não é válido pois a primeira linha (número de testes) deve respeitar a regra 1 ≤ t ≤ 25 e neste teste está informado 500.
 
-Por exemplo:
+
+Exemplos de testes locais corretos, com a saída identica a saída o uDebug:
 
 > 10
 > 
