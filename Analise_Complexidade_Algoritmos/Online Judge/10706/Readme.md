@@ -78,8 +78,11 @@ A soma acumulada por cada grupo ajudará a identificar em que grupo está contid
 A técnica Dividir e Conquistar foi utilizada na busca binária realizada para se identificar dentro do objeto que armazena a soma acumulada de cada grupo. Identificada a posição, esta é expandida para que seja identificado o algarismo desejado.
 
 
-Após submissão no Online Judge, o site apresentou "Runtime error", porém o uDegug apresenta sucesso para diversos casos de teste e também para o segundo caso de teste do uDebug.
+Após submissão no Online Judge, o site apresentou "Runtime error", conforme imagem a seguir (primeiro item da lista). Porém o uDegug apresenta sucesso para diversos casos de teste e também para o segundo caso de teste do uDebug.
 OBS.: o primeiro teste do uDebug não é válido pois a primeira linha (número de testes) deve respeitar a regra 1 ≤ t ≤ 25 e neste teste está informado 500.
+
+![Veredito](./10706-veredito.png)
+
 
 
 Exemplos de testes locais corretos, com a saída identica a saída o uDebug:
