@@ -14,6 +14,13 @@ Para cada caso de teste são inicializadas as variáveis de controle e de acordo
 Ao se chegar no evento final, Goal, o consumo em litros é apresentado.
 
 
+Não consegui encaixar neste problema a técnica de Dividir e Conquistar, sendo o input, após finalizado, processado para se chegar ao resultado a ser apresentado.
+
+
+Foi recebido "Accepted" no Online Judge, conforme imagem a seguir (primeiro item da lista):
+
+![Veredito](./11935-veredito.png)
+
 ## Análise da complexidade de tempo do programa desenvolvido
 
 

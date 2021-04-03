@@ -13,7 +13,7 @@ Após entrada dos dados necessários, organizando-se as opções selecionadas pa
 A técnica de pesquisa completa foi utilizada na produção de todas as combinações dos jornais indicados, de acordo com a opção selecionada.
 
 
-Foi recebido "Accepted" no Online Judge, conforme imagem a seguir:
+Foi recebido "Accepted" no Online Judge, conforme imagem a seguir (primeiro item da lista):
 
 ![Veredito](./00598-veredito.png)
 

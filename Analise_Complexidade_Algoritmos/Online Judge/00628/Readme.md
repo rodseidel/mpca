@@ -22,6 +22,12 @@ Com a lista do produto destes caracteres numéricos em mãos, é feita, para cad
 
 A técnica de pesquisa completa foi utilizada na realização produto de senhas/regras e na aplicação de cada um desse produto às cada uma das regras indicadas.
 
+
+
+Foi recebido "Accepted" no Online Judge, conforme imagem a seguir (primeiro item da lista):
+
+![Veredito](./00628-veredito.png)
+
 ## Análise da complexidade de tempo do programa desenvolvido
 
 

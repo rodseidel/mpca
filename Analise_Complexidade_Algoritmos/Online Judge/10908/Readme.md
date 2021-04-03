@@ -17,6 +17,11 @@ Caso na camada exista algum caracter diferente do buscado ou caso a coordenada c
 
 A técnica de pesquisa completa foi utilizada de forma que para confirmar o maior lado do quadrado possível a partir de uma coordenada, todas as outras coordenadas em torno dela são geradas e verificadas, sempre respeitando as camadas e o tamanho do grid.
 
+
+Foi recebido "Accepted" no Online Judge, conforme imagem a seguir (primeiro item da lista):
+
+![Veredito](./10908-veredito.png)
+
 ## Análise da complexidade de tempo do programa desenvolvido
 
 
