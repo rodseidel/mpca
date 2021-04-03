@@ -1,13 +1,13 @@
 # Análise e Complexidade de Algoritmos
 
-Rodrigo Seidel
+**Rodrigo Seidel**
 
-PPComp — Campus Serra, Ifes
+**PPComp — Campus Serra, Ifes**
 
-2020-03
+**2021-03**
 
 ## Breve explicação de como a técnica indicada foi utilizada
-Após a realização do tratamento da entrada dos dados, aproveitando-se da padronização existente para compor a lista de eventos, é feito a leitura de cada caso de teste, que tem início no KM 0 e final no evento Goal.
+Após a realização do tratamento da entrada dos dados, aproveitando-se da padronização existente para compor a lista de eventos, é feito a leitura de cada caso de teste, que tem início no km 0 e seu final no evento Goal.
 
 Para cada caso de teste são inicializadas as variáveis de controle e de acordo com os eventos e suas características, elas vão sendo atualizadas, sendo o consumo em litros calculado a cada evento.
 

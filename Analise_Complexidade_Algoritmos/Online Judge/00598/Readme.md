@@ -1,10 +1,10 @@
 # Análise e Complexidade de Algoritmos
 
-Rodrigo Seidel
+**Rodrigo Seidel**
 
-PPComp — Campus Serra, Ifes
+**PPComp — Campus Serra, Ifes**
 
-2020-03
+**2021-03**
 
 
 ## Breve explicação de como a técnica indicada foi utilizada
