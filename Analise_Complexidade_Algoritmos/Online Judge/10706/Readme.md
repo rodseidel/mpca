@@ -75,7 +75,7 @@ A soma acumulada por cada grupo ajudará a identificar em que grupo está contid
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 --> 120
 
 
-A técnica Dividir e Conquistar foi utilizada na busca binária realizada para se identificar dentro do objeto que armazena a soma acumulada de cada grupo. Identificada a posição, esta é expandida para que seja identificado o algarismo desejado.
+A técnica Dividir e Conquistar foi utilizada na busca binária realizada para se identificar dentro do objeto que armazena a soma acumulada de cada grupo o 'i' que está se tentando localizar. Identificada a posição, esta é expandida para que seja identificado o algarismo desejado.
 
 
 Após submissão no Online Judge, o site apresentou "Runtime error", conforme imagem a seguir (primeiro item da lista). Porém o uDegug apresenta sucesso para diversos casos de teste e também para o segundo caso de teste do uDebug.
