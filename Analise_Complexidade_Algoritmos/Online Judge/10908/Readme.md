@@ -7,7 +7,7 @@ PPComp — Campus Serra, Ifes
 2020-03
 
 ## Breve explicação de como a técnica indicada foi utilizada
-Após entrada dos dados necessários é feita uma verificação do tamanho do grid informado, dependendo da forma do grid, o maior tamanho do quadrado a ser pesquisado da coordenada sempre será 1.
+Após entrada dos dados necessários é feita uma verificação do tamanho do grid informado, pois dependendo da forma do grid, o maior tamanho possível do quadrado sempre será 1, independente da coordenada pesquisada.
 
 Também me utilizei da característica do problema de que o lado do quadrado sempre será ímpar, descartando pesquisas de lados pares.
 
