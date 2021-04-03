@@ -75,13 +75,10 @@ A soma acumulada por cada grupo ajudará a identificar em que grupo está contid
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 --> 120
 
 
-A técnica Dividir e Conquistar foi utilizada por conta da divisão do problema em partes, de forma que não seja necessário gerar todo o número para se determinar qual algarismo está presente em determinada posição.
-
-A partir desta estrutura sumarizada, identifica-se a posição a ser expandida para que seja identificado o algarismo desejado.
+A técnica Dividir e Conquistar foi utilizada na busca binária realizada para se identificar dentro do objeto que armazena a soma acumulada de cada grupo. Identificada a posição, esta é expandida para que seja identificado o algarismo desejado.
 
 
-
-Após submissão no Online Judge, o site apresentou "Runtime error", porém o uDegug apresenta sucesso para diversos casos de teste. O código também roda corretamente quando executado localmente.
+Após submissão no Online Judge, o site apresentou "Runtime error", porém o uDegug apresenta sucesso para diversos casos de teste e também para o segundo caso de teste do uDebug.
 OBS.: o primeiro teste do uDebug não é válido pois a primeira linha (número de testes) deve respeitar a regra 1 ≤ t ≤ 25 e neste teste está informado 500.
 
 
@@ -131,11 +128,7 @@ Exemplos de testes locais corretos, com a saída identica a saída o uDebug:
 
 #
 
-> 18 
-> 
-> 8 
-> 
-> 3 
+> 16
 > 
 > 80 
 > 
@@ -166,13 +159,9 @@ Exemplos de testes locais corretos, com a saída identica a saída o uDebug:
 > 778888 
 > 
 > 101011 
->
+> 
 > 2147483647
 
-> 2 
-> 
-> 2 
-> 
 > 0 
 > 
 > 2 
@@ -210,9 +199,4 @@ Exemplos de testes locais corretos, com a saída identica a saída o uDebug:
 
 
 ## Outras informações que o autor julgar apropriadas para o entendimento do trabalho realizado
-No printscreen do veredito do submit, há para este problema uma submissão com Accepted. Esta foi uma implementação que localizei em C++, bem mais simples que a feita por mim, que não acreditei que teria sucesso após a transcrição para Python.
-No momento em que fiz isso, meu algoritmo retornava corretamente para 'i' pequeno, porém 'i' muito grande retornava um algarismo incorreto.
 
-A partir daí comecei a tentar entender a lógica utilizada nesse algoritmo, observei minha falha (que estava em fazer o acúmulo considerando apenas valor absoluto do número, sem considerar a quantidade de algarismos que ele continha).
-
-A partir daí, atualizei o algoritmo que eu tinha criado, de forma que pude confirmar que a busca que eu estava fazendo estava correta, o problema de fato estava na composição do cálculo acumulado.
