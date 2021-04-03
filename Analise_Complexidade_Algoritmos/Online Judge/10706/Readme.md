@@ -85,7 +85,7 @@ OBS.: o primeiro teste do uDebug não é válido pois a primeira linha (número 
 
 
 
-Exemplos de testes locais corretos, com a saída identica a saída o uDebug:
+Exemplos de testes locais corretos, com a saída correta, de acordo com o uDebug:
 
 > 10
 > 
