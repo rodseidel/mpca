@@ -199,7 +199,31 @@ Exemplos de testes locais corretos, com a saída correta, de acordo com o uDebug
 
 ## Análise da complexidade de tempo do programa desenvolvido
 
+Operações para compor a soma acumulada dos grupos de números: 2(n-1)
 
+Busca binária, tem complexidade conhecida de: O(log n)
+
+Número de posições a pesquisar: P
+
+Número de operações para expandir posição pesquisada: n-1
+
+Foram desconsiderados custos irrelevantes, como atribuição de váriáveis, append em dict, etc, pois têm custo 1 (https://wiki.python.org/moin/TimeComplexity).
+
+Considerando as entradas e seu processamento até a pesquisa da coordenadas (e os loopings pelos quais se passa), não considerando a pesquisa binária pois já tem complexidade conhecida, chegamos à fórmula C = P*(n-1) + (2*(n-1))
+
+
+<div class="math">
+\begin{equation}
+C(n) =
+  \begin{cases}
+    1 & \text{se}~n = 1 \\
+    P*(n-1) + (2*(n-1)) & \text{caso contrário}
+  \end{cases}
+\end{equation}
+</div>
+
+
+Avaliando a análise do Wolfram Alpha e, sendo esta maior que a complexidade da busca binária, chega-se a complexidade do algoritmo como um todo como sendo O(n).
 
 ## Outras informações que o autor julgar apropriadas para o entendimento do trabalho realizado
 

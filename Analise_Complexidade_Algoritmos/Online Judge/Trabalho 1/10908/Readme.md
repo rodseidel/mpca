@@ -30,7 +30,7 @@ Foi recebido "Accepted" no Online Judge, conforme imagem a seguir (primeiro item
 - Número de coordenadas X: n
 - Número de coordenadas Y: n
 
-Foram desconsiderados custos irrelevantes, como atribuição de váriáveis, append em listas, etc, pois têm custo 1 (https://wiki.python.org/moin/TimeComplexity).
+Foram desconsiderados custos irrelevantes, como atribuição de variáveis, append em listas, etc, pois têm custo 1 (https://wiki.python.org/moin/TimeComplexity).
 
 Considerando as entradas e seu processamento até a pesquisa da coordenadas (e os loopings pelos quais se passa), chegamos à fórmula C = (T-1)*(L-1)*(f-1)*(n-1)*(n-1).
 
