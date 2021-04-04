@@ -44,6 +44,7 @@ C(n) =
 \end{equation}
 </div>
 
+
 Avaliando a análise do Wolfram Alpha, chega-se a complexidade O(n²).
 
 
