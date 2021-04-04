@@ -44,7 +44,7 @@ C(n) =
 \end{equation}
 </div>
 
-Avaliando a análise do Wolfram Alpha, chegamos a conclusão que temos a complexidade O(n²).
+Avaliando a análise do Wolfram Alpha, chega-se a complexidade O(n²).
 
 
 ## Outras informações que o autor julgar apropriadas para o entendimento do trabalho realizado
