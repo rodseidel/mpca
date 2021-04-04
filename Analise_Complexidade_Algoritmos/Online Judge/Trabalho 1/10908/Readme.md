@@ -24,6 +24,27 @@ Foi recebido "Accepted" no Online Judge, conforme imagem a seguir (primeiro item
 
 ## Análise da complexidade de tempo do programa desenvolvido
 
+Número de testes: T
+Número de Localizações: L
+Número de tamanhos de lados: f
+Número de coordenadas X: n
+Número de coordenadas Y: n
+
+Foram desconsiderados custos irrelevantes, como atribuição de váriáveis, append em listas, etc, pois têm custo 1 (https://wiki.python.org/moin/TimeComplexity).
+
+Considerando as entradas e seu processamento até a pesquisa da coordenadas (e os loopings pelos quais se passa), chegamos à fórmula C = (T-1)*(L-1)*(f-1)*(n-1)*(n-1).
+
+<div class="math">
+\begin{equation}
+C(n) =
+  \begin{cases}
+    1 & \text{se}~n = 1 \\
+    (T-1)*(L-1)*(f-1)*(n-1)*(n-1) & \text{caso contrário}
+  \end{cases}
+\end{equation}
+</div>
+
+Avaliando a análise do Wolfram Alpha, chegamos a conclusão que temos a complexidade O(n²).
 
 
 ## Outras informações que o autor julgar apropriadas para o entendimento do trabalho realizado
