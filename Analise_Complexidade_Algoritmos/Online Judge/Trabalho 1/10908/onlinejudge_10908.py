@@ -14,17 +14,16 @@ def pesquisa(maior_lado_possivel, grid, x, y, qtd_linhas, qtd_colunas):
   c = 0
   maior_lado = 1
   valor_coordenada_busca =  grid[x][y]
-  #print("Busca {}".format(valor_coordenada_busca)) ###################
+  #print("Busca {}".format(valor_coordenada_busca)) ###
   for l in range(maior_lado_possivel):
     if (l+1) % 2 == 1 and (l+1) != 1:
       c += 1
-      #print("tamanho {}".format(l+1)) ##################
+      #print("tamanho {}".format(l+1)) ###
       verificou_todas_coordenadas = True
       for xb in range(x-c,x+c+1):
-        #verificou_todas_coordenadas = True
         for yb in range(y-c,y+c+1):
           if not(xb == x and yb == y):
-            #print("({},{},{},{})".format(xb,yb,grid[xb][yb],verificou_todas_coordenadas)) ################
+            #print("({},{},{},{})".format(xb,yb,grid[xb][yb],verificou_todas_coordenadas)) ###
             #Se encontrar um valor diferente ao redor 
             #ou for uma coordenada inexistente para
             if xb < 0 or yb < 0 or xb > qtd_linhas-1 or yb > qtd_colunas-1 or valor_coordenada_busca != grid[xb][yb]:
