@@ -24,11 +24,11 @@ Foi recebido "Accepted" no Online Judge, conforme imagem a seguir (primeiro item
 
 ## Análise da complexidade de tempo do programa desenvolvido
 
-Número de testes: T
-Número de Localizações: L
-Número de tamanhos de lados: f
-Número de coordenadas X: n
-Número de coordenadas Y: n
+- Número de testes: T
+- Número de Localizações: L
+- Número de tamanhos de lados: f
+- Número de coordenadas X: n
+- Número de coordenadas Y: n
 
 Foram desconsiderados custos irrelevantes, como atribuição de váriáveis, append em listas, etc, pois têm custo 1 (https://wiki.python.org/moin/TimeComplexity).
 
