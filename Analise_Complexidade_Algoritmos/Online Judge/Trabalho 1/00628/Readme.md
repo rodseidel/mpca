@@ -30,6 +30,21 @@ Foi recebido "Accepted" no Online Judge, conforme imagem a seguir (primeiro item
 
 ## Análise da complexidade de tempo do programa desenvolvido
 
+N regras, para cada faz:
+Tratamento dos '#': 
+-> produto: (n * n * n (código na documentação anexa)) * substituição dos '#' (n * n)
++ 
+Tratamento dos '0': 
+n palavras expandidas * produto (n * n * n (código na documentação anexa)) * substituição dos '0' (n * n)
+
+Tendo assim:
+(n * n * n * n * n * n) + (n * n * n * n * n * n * n) = n⁶ + n⁷
+
+
+Assim, temos complexidade:
+- O(n⁶), se não tiver # informada na regra;
+- O(n⁷), se tiver # informada na regra;
+
 
 
 ## Outras informações que o autor julgar apropriadas para o entendimento do trabalho realizado
