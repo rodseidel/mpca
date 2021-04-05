@@ -34,9 +34,13 @@ N regras, para cada faz:
 Tratamento dos '#': 
 
 produto: (n * n * n (código na documentação anexa)) * substituição dos '#' (n * n)
+
 + 
+
 Tratamento dos '0': 
+
 n palavras expandidas * produto (n * n * n (código na documentação anexa)) * substituição dos '0' (n * n)
+
 
 Tendo assim:
 (n * n * n * n * n * n) + (n * n * n * n * n * n * n) = n⁶ + n⁷
