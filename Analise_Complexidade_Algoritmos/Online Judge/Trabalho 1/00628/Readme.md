@@ -32,7 +32,8 @@ Foi recebido "Accepted" no Online Judge, conforme imagem a seguir (primeiro item
 
 N regras, para cada faz:
 Tratamento dos '#': 
--> produto: (n * n * n (código na documentação anexa)) * substituição dos '#' (n * n)
+
+produto: (n * n * n (código na documentação anexa)) * substituição dos '#' (n * n)
 + 
 Tratamento dos '0': 
 n palavras expandidas * produto (n * n * n (código na documentação anexa)) * substituição dos '0' (n * n)
