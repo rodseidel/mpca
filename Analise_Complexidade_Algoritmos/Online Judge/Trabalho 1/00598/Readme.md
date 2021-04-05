@@ -30,9 +30,9 @@ Portanto, a complexidade de tempo desse programa, desconsiderando as demais oper
 https://wiki.python.org/moin/TimeComplexity
 
 Apoio: 
-
-https://justinbois.github.io/bootcamp/2020/lessons/l33_algorithmic_complexity.html
-https://daemoniolabs.wordpress.com/tag/complexidade-combinacao
+>https://justinbois.github.io/bootcamp/2020/lessons/l33_algorithmic_complexity.html
+> 
+>https://daemoniolabs.wordpress.com/tag/complexidade-combinacao
 
 
 
