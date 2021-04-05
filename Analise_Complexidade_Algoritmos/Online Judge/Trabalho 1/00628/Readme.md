@@ -31,11 +31,12 @@ Foi recebido "Accepted" no Online Judge, conforme imagem a seguir (primeiro item
 ## Análise da complexidade de tempo do programa desenvolvido
 
 N regras, para cada faz:
+
 Tratamento dos '#': 
 
 produto: (n * n * n (código na documentação anexa)) * substituição dos '#' (n * n)
 
-+ 
+\+ 
 
 Tratamento dos '0': 
 
