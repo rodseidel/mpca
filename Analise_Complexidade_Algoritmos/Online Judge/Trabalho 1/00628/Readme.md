@@ -36,7 +36,7 @@ Tratamento dos '#':
 
 produto: (n * n * n (código na documentação anexa)) * substituição dos '#' (n * n)
 
-\+ 
+mais, 
 
 Tratamento dos '0': 
 
