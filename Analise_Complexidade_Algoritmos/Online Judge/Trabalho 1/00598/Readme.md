@@ -18,7 +18,14 @@ Foi recebido "Accepted" no Online Judge, conforme imagem a seguir (primeiro item
 ![Veredito](./00598-veredito.png)
 
 ## Análise da complexidade de tempo do programa desenvolvido
+O ponto central desse programa é a produção das combinações possíveis. O número de combinações de n elementos combinados r vezes é dado pela fórmula Cnp = n!/( r!(n-r)! ).
 
+Considerando o restante do programa e suas operações, elas não executarão um maior número de operações do que a produção das combinações possíveis de n elementos combinados em grupos de r.
+
+Esse número de operações para se gerar as combinações possíveis crescerá a medida que o número de datasets aumentar, porém a complexidade se manterá a mesma, que é O(n!)
+
+https://wiki.python.org/moin/TimeComplexity
+Apoio: https://justinbois.github.io/bootcamp/2020/lessons/l33_algorithmic_complexity.html
 
 
 ## Outras informações que o autor julgar apropriadas para o entendimento do trabalho realizado
