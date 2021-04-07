@@ -38,11 +38,8 @@ for t in range(qtd_testes):
   casos_teste.append([qtd_objetos,objetos,pessoas])
 
 
-#Solução recursiva 
 # Retorna o maior valor que pode ser carregado pela pessoa, com limite de peso G
 def melhorValorPessoa(limitePeso, itens, n):  #n= qtdItens
-
-    cache = cacheVazio(n,limitePeso)
 
     # caso básico (sem peso ou sem itens)
     if limitePeso == 0 or n == 0:
@@ -89,6 +86,8 @@ for t in range(len(casos_teste)):
   #Para cada pessoa: pessoas[p]: limite de peso que ela pode carregar
   for p in range(len(pessoas)):
     
+    cache = cacheVazio(qtd_itens,pessoas[p])
+	    
     if not cachePessoa.get(pessoas[p]):
 
       maior_valor_pessoa = melhorValorPessoa(pessoas[p], itens, qtd_itens)  
