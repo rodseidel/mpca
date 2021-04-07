@@ -31,9 +31,9 @@ for t in range(qtd_testes):
   pessoas = []
 
   for g in range(qtd_pessoas):
-    maior_pesso_pessoa = int(input())
+    maior_peso_pessoa = int(input())
     
-    pessoas.append(maior_pesso_pessoa)
+    pessoas.append(maior_peso_pessoa)
 
   casos_teste.append([qtd_objetos,objetos,pessoas])
 
