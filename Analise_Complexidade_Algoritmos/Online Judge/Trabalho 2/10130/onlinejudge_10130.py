@@ -44,6 +44,7 @@ def melhorValorPessoa(limitePeso, itens, n):  #n= qtdItens
     if limitePeso == 0 or n == 0:
         return 0
     if cache[n][limitePeso] != -1:
+        #print("usou cache")
         return cache[n][limitePeso]
  
     # Se o peso do item N é maior que o peso máximo que a pessoa pode carregar 
@@ -96,7 +97,7 @@ for t in range(len(casos_teste)):
       maior_valor += maior_valor_pessoa
 
     else:
-
+      #print("usou cache")
       maior_valor += cachePessoa[pessoas[p]]
 
   print(maior_valor)
