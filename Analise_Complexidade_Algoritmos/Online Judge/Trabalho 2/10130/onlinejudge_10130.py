@@ -83,11 +83,12 @@ for t in range(len(casos_teste)):
   maior_valor = 0
 
   cachePessoa = {}
+  cache = cacheVazio(qtd_itens,max(pessoas))
 
   #Para cada pessoa: pessoas[p]: limite de peso que ela pode carregar
   for p in range(len(pessoas)):
 
-    cache = cacheVazio(qtd_itens,pessoas[p])
+    #cache = cacheVazio(qtd_itens,pessoas[p])
       
     if not cachePessoa.get(pessoas[p]):
 
@@ -99,10 +100,7 @@ for t in range(len(casos_teste)):
     else:
       #print("usou cache")
       maior_valor += cachePessoa[pessoas[p]]
-
   print(maior_valor)
-
-
 
 #maior_valor = 0
 #for p in range(len(casos_teste[1][2])):
