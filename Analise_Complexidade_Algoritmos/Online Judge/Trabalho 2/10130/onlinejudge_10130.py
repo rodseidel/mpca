@@ -37,8 +37,7 @@ for t in range(qtd_testes):
 
   casos_teste.append([qtd_objetos,objetos,pessoas])
 
-
-# Retorna o maior valor que pode ser carregado pela pessoa, com limite de peso G
+# Retorna o maior valor que pode ser carregado pela pessoa, considerando o limite de peso dela
 def melhorValorPessoa(limitePeso, itens, n):  #n= qtdItens
 
     # caso básico (sem peso ou sem itens)
@@ -71,12 +70,13 @@ def melhorValorPessoa(limitePeso, itens, n):  #n= qtdItens
 for t in range(len(casos_teste)):
   ##########################################
   # posição 0: quantidade de itens
-  # posição 1: preço/valor de cada itens
+  # posição 1: preço (posição [0]) / peso (posicao[1]) de cada item
   # posicao 2: limite de peso das pessoas
   ########################################## 
 
   qtd_itens = casos_teste[t][0]
   itens = casos_teste[t][1]
+  itens.sort(key=lambda x: x[0]) #ordenação dos itens por valor em ordem crescente
   pessoas = casos_teste[t][2]
   
   maior_valor = 0
@@ -85,9 +85,9 @@ for t in range(len(casos_teste)):
 
   #Para cada pessoa: pessoas[p]: limite de peso que ela pode carregar
   for p in range(len(pessoas)):
-    
+
     cache = cacheVazio(qtd_itens,pessoas[p])
-	    
+      
     if not cachePessoa.get(pessoas[p]):
 
       maior_valor_pessoa = melhorValorPessoa(pessoas[p], itens, qtd_itens)  
@@ -101,3 +101,12 @@ for t in range(len(casos_teste)):
 
   print(maior_valor)
 
+
+
+#maior_valor = 0
+#for p in range(len(casos_teste[1][2])):
+#  limite_peso_pessoa = casos_teste[1][2][p]
+  
+#  maior_valor += melhorValorPessoa(limite_peso_pessoa, casos_teste[1][1], len(casos_teste[1][1]))
+
+#print(maior_valor)
