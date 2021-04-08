@@ -36,7 +36,7 @@ Número casos de teste: T
 - Número de pessoas: P
 - Recursão para identificar melhor valor pessoa: num_itens*peso_da_pessoa (percorre-se todas as capacidades de peso da pessoa de 1 até o peso total).
 
-Foram desconsiderados custos irrelevantes, como atribuição de váriáveis, append em dict, etc, pois têm custo 1 (https://wiki.python.org/moin/TimeComplexity).
+Foram desconsiderados custos irrelevantes, como atribuição de váriáveis, append em dict, lista, etc, pois têm custo 1 (https://wiki.python.org/moin/TimeComplexity).
 
 <div class="math">
 \begin{equation}
