@@ -8,6 +8,13 @@
 
 ## Breve explicação de como a técnica indicada foi utilizada
 
+
+
+Cache matriz onde as linhas são as moedas e as colunas os valores
+
+
+
+
 O objetivo do problema é maximizar o valor que cada pessoa pode carregar, considerando o valor e o peso de cada item, e o peso máximo que cada pessoa pode carregar.
 
 Primeiramente define-se o caso básico da recursão, que é quando o limite do peso da pessoa for zero ou quando a quantidade de itens informada for zero. 
@@ -17,7 +24,7 @@ Caso não seja o caso básico:
 - caso o item não exceda o peso que a pessoa pode carregar, verifica-se se será considerado o item para a pessoa ou se é mais vantajoso desconsiderar aquele item, neste caso será feita a opção pelo que tiver maior valor entre as duas opções.
 
 A técnica de programação dinâmica foi utilizada inicialmente através da utilização de um cache (variável cache) em matriz que relaciona a quantidade de itens que está se tentando entregar para a pessoa e
-capacidade de carga já utilizada da pessoa. Nessa matriz fica armazenavo o valor que pode ser carregado considerando a quantidade de itens (colunas) e a capacidade de carga já utilizada (linhas), permitindo desta forma armazenar um resultado de forma a evitar a redundância de cálculos.
+capacidade de carga já utilizada da pessoa. Nessa matriz fica armazenavo o valor que pode ser carregado considerando a quantidade de itens (eixo x) e a capacidade de carga já utilizada (eixo y), permitindo desta forma armazenar um resultado de forma a evitar a redundância de cálculos.
 
 Ao submeter no Online Judge desta forma, obtive "Time limit exceeded". Tentei resolver essa questão inserindo um outro cache (variável cachePessoa) no qual armazena-se o maior valor que um peso X pode carregar, evitando-se, desta forma, utilizar o cache acima, assim, entendo eu, obtendo melhor performance na execução. Infelizmente consegui novamente "Time limit exceeded".
 
