@@ -8,54 +8,41 @@
 
 ## Breve explicação de como a técnica indicada foi utilizada
 
+O problema consiste em identificar as diferentes maneiras de compor um valor utilizando as moedas de 1, 5, 10, 25 e 50 centavos.
 
+A primeira dúvida resolvida foi confirmar se o valor 6, por exemplo, teria 3 (1+1+1+1+1+1; 1+5; 5+1) ou 2 (5+1 seria igual a 1+5, portanto seria considerado apenas 1) maneiras diferentes. Através de testes no uDebug foi confirmado 2 maneiras distintas.
 
-Cache matriz onde as linhas são as moedas e as colunas os valores
+A técnica de programação dinâmica foi utilizada na montagem de uma matriz, na qual as linhas representam os valores pesquisados e as colunas representam as moedas disponíveis. Ela é inicializada de forma que a linha 0 é populada toda com o valor 1, o que representa que o existe apenas 1 maneira de se compor o valor 0 com qualquer uma das moedas, ou seja, sem moedas.
 
+Dado um valor, percorre-se de 1 até aquele valor em questão, buscando-se a quantidade de maneiras que pode-se compor cada valor intermediário, sendo que as formas possíveis vão se acumulando (aproveitando-se de cálculo feito previamente), porém as moedas disponíveis vão diminuindo. Ao final o valor que chegamos é a quantidade distinta de formas de compor o valor.
 
+Consegui apenas o resultado "Wrong answer", conforme imagem a seguir (primeiro item da lista), entretanto, obtive sucesso nos 2 casos de teste no uDebug ao executar o código localmente.
 
-
-O objetivo do problema é maximizar o valor que cada pessoa pode carregar, considerando o valor e o peso de cada item, e o peso máximo que cada pessoa pode carregar.
-
-Primeiramente define-se o caso básico da recursão, que é quando o limite do peso da pessoa for zero ou quando a quantidade de itens informada for zero. 
-
-Caso não seja o caso básico:
-- verifica-se se o peso do item excede o peso que a pessoa consegue carregar, se isso acontecer, ele vai prosseguir sem incluir aquele item para a pessoa, verificando outro item. 
-- caso o item não exceda o peso que a pessoa pode carregar, verifica-se se será considerado o item para a pessoa ou se é mais vantajoso desconsiderar aquele item, neste caso será feita a opção pelo que tiver maior valor entre as duas opções.
-
-A técnica de programação dinâmica foi utilizada inicialmente através da utilização de um cache (variável cache) em matriz que relaciona a quantidade de itens que está se tentando entregar para a pessoa e
-capacidade de carga já utilizada da pessoa. Nessa matriz fica armazenavo o valor que pode ser carregado considerando a quantidade de itens (eixo x) e a capacidade de carga já utilizada (eixo y), permitindo desta forma armazenar um resultado de forma a evitar a redundância de cálculos.
-
-Ao submeter no Online Judge desta forma, obtive "Time limit exceeded". Tentei resolver essa questão inserindo um outro cache (variável cachePessoa) no qual armazena-se o maior valor que um peso X pode carregar, evitando-se, desta forma, utilizar o cache acima, assim, entendo eu, obtendo melhor performance na execução. Infelizmente consegui novamente "Time limit exceeded".
-
-Ainda tentando o "Accepted", modifiquei a forma de utilização do primeiro cache que citei, alterando sua reinicialização, que anteriormente estava por pessoa, para a cada caso de teste. A matriz cache passou a ser inicializada considerando o maior peso da lista de pessos informada no caso de testes. Considerando que em cada caso de teste os itens permanecem os mesmos o que muda é o peso máximo das pessoas, esse cache poderia ser reaproveitado, evitando mais cálculos redundantes.
-
-Nesse último caso consegui apenas "Runtime error", conforme imagem a seguir (primeiro item da lista), entretanto, obtive sucesso nos 4 casos de teste no uDebug ao executar o código localmente (em todas as formas de cache indicadas acima), apresentado o resultado correto em todos eles.
-
-![Veredito](./10130-veredito.png)
+![Veredito](./00674-veredito.png)
 
 
 ## Análise da complexidade de tempo do programa desenvolvido
 
-Número casos de teste: T
-- Inicializa cache: num_itens * maior_peso_pessoas
-- sort itens lista: O(n log n)
-- Número de pessoas: P
-- Recursão para identificar melhor valor pessoa: num_itens*peso_da_pessoa (percorre-se todas as capacidades de peso da pessoa de 1 até o peso total).
+Quantidade de valores: N
+Quantidade moedas: 5
+Prepara o cache: 1 x n+1 - cache com quantidade de linhas de 0 até o valor máximo inserido no input
 
-Foram desconsiderados custos irrelevantes, como atribuição de váriáveis, append em dict, lista, etc, pois têm custo 1 (https://wiki.python.org/moin/TimeComplexity).
+Busca qtd maneiras: N*(n+1) + (n+1)
+
+Foram desconsiderados custos irrelevantes, como atribuição de váriáveis, lista, etc, pois têm custo 1 (https://wiki.python.org/moin/TimeComplexity).
+
 
 <div class="math">
 \begin{equation}
 T(n) =
   \begin{cases}
     1 & \text{se}~n = 1 \\
-    T*((num_itens*maior_peso_pessoas) + (P*(num_itens*peso_da_pessoa))) & \text{caso contrário}
+    N*(n+1) + (n+1) & \text{caso contrário}
   \end{cases}
 \end{equation}
 </div>
 
-Avaliando o retorno no Wolfram Alpha, entendi que a complexidade do algoritmo ficou em O(n).
+Avaliando o retorno no Wolfram Alpha, entendi que a complexidade do algoritmo ficou em O(n²).
 
 
 ## Outras informações que o autor julgar apropriadas para o entendimento do trabalho realizado
