@@ -1,7 +1,12 @@
 def cacheVazio (qtdLinhas, qtdColunas):
   matriz = []
   linha = []
-  for c in range((qtdColunas + 1)):
+   
+  ##Matriz de cache
+  ##Linhas = VALORES
+  ##Colunas = MOEDAS
+
+  for c in range((qtdColunas)):
     linha.append(0)
   
   for l in range((qtdLinhas + 1)):
@@ -9,15 +14,10 @@ def cacheVazio (qtdLinhas, qtdColunas):
   
   return matriz
 
+moedas = [1, 5, 10, 25, 50]
 
 def quantidadeManeiras(valor, qtdMoedas):
   
-  #cache = cacheVazio(valor,qtdMoedas)
-
-  #caso base  
-  for i in range(qtdMoedas):
-    cache[0][i] = 1
-
   for i in range(valor+1):
     if i >= 1:
       cache[i][0] = cache[i-1][0]
@@ -44,7 +44,6 @@ def quantidadeManeiras(valor, qtdMoedas):
     if i>= 50:
       cache[i][4] += cache[i-50][4]
 
-
   return cache[valor][qtdMoedas-1]
 
 #INPUT DE DADOS
@@ -61,8 +60,14 @@ while True:
       #PROCESSAMENTO
       cache = cacheVazio(max(valores),qtdTiposMoedas)
 
+      ##inicializa caso base - retornar qualquer valor com 0 moedas, tem somente 1 forma 
+      for i in range(qtdTiposMoedas):
+        cache[0][i] = 1
+
       for v in range(len(valores)):
         print(quantidadeManeiras(valores[v], qtdTiposMoedas))
+        
+      #print("")
 
       break
       
