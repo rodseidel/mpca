@@ -8,7 +8,7 @@
 
 ## Breve explicação de como a técnica indicada foi utilizada
 
-Após a entrada de dados de cada caso de testeas bolsas são ordenadas de maneira crescente. 
+Após a entrada de dados de cada caso de teste, as bolsas são ordenadas de maneira crescente. 
 
 Em seguida, para cada caso de teste é feita uma leitura em toda lista de bolsas para se identificar a quantidade de bolsas que teremos ao juntarmos umas nas outras. Com essa quantidade k em mãos, é feita a leitura da lista de bolsas novamente, para cada identificarmos quais bolsas colocaremos em cada k.
 
