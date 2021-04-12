@@ -8,9 +8,9 @@
 
 ## Breve explicação de como a técnica indicada foi utilizada
 
-Após a entrada de dados, que já é feita ordenada de maneira crescente é feito o processamento dos casos de teste.
+Após a entrada de dados, que já é feita ordenada de maneira crescente, é feito o processamento dos casos de teste.
 
-Entendo que a propriedade de escolha gulosa trata-se do uso do valor da moeda seguinte a que está se avaliando "V", de forma que, a moeda atual "A" será considerada na contagem quando adicionando-se o valor de "A" à soma de todas as moedas consideradas anteriormente tivermos um valor menor que "V".
+Entendo que a propriedade de escolha gulosa trata-se do uso do valor da moeda seguinte "V" a que está se avaliando, de forma que, a moeda que se está avaliando "A" será considerada na contagem quando adicionando-se o valor de "A" à soma de todas as moedas consideradas anteriormente tivermos um valor menor que "V".
 
 Foi obtido o resultado "Accepted", conforme imagem a seguir (primeiro item da lista).
 
