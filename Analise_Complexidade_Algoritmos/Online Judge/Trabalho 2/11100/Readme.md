@@ -10,9 +10,9 @@
 
 Após a entrada de dados de cada caso de teste, as bolsas são ordenadas de maneira crescente. 
 
-Em seguida, para cada caso de teste é feita uma leitura em toda lista de bolsas para se identificar a quantidade de bolsas que teremos ao juntarmos umas nas outras. Com essa quantidade k em mãos, é feita a leitura da lista de bolsas novamente, para cada identificarmos quais bolsas colocaremos em cada k.
+Em seguida, para cada caso de teste é feita uma leitura em toda lista de bolsas para se identificar a quantidade k de bolsas que teremos ao juntarmos umas nas outras. Com essa quantidade k em mãos, é feita a leitura da lista de bolsas novamente, para cada identificarmos quais bolsas colocaremos em cada k.
 
-Entendo que a propriedade de escolha gulosa trata-se deste k determinado, pois com ele, lê-se a lista de bolsas novamente (k vezes), realizando saltos de tamanho k, e a cada salto, avança-se uma posição a frente, de forma que sempre produz-se uma nova forma ao se terminar a leitura da lista. Cada 'parada' do salto é uma bolsa que a anterior será inserida.
+Entendo que a propriedade de escolha gulosa trata-se deste k determinado, pois com ele, lê-se a lista de bolsas novamente (k vezes), realizando saltos de tamanho k na lista, de forma que a cada salto uma bolsa será inserida dentro da outra, e a cada leitura completa da lista finalizada avança-se uma posição nela, repetindi-se o processo, até que as k vezes se finalize.
 
 
 Consegui apenas o resultado "Runtime error", conforme imagem a seguir (primeiro item da lista), entretanto, obtive sucesso nos 3 casos de teste no uDebug ao executar o código localmente.
