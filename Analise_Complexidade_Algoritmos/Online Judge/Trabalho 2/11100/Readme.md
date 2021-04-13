@@ -15,7 +15,7 @@ Em seguida, para cada caso de teste é feita uma leitura em toda lista de bolsas
 Entendo que a propriedade de escolha gulosa trata-se deste k determinado, pois com ele, lê-se a lista de bolsas novamente (k vezes), realizando saltos de tamanho k na lista, de forma que a cada salto uma bolsa será inserida dentro da outra, e a cada leitura completa da lista finalizada avança-se uma posição nela, repetindi-se o processo, até que as k vezes se finalize.
 
 
-Consegui apenas o resultado "Runtime error", conforme imagem a seguir (primeiro item da lista), entretanto, obtive sucesso nos 3 casos de teste no uDebug ao executar o código localmente.
+Consegui o resultado "Accepted", conforme imagem a seguir (primeiro item da lista).
 
 ![Veredito](./11100-veredito.png)
 
