@@ -82,11 +82,9 @@ while True:
 
     break
 
-  lista_bolsas = input().split()
-
-  #PARA O ACCEPTED A ENTRADA DEVE SER ITEM A ITEM E NÃO TUDO EM LINHA, VER O OUTRO ARQUIVO .PY
-  for b in range(len(lista_bolsas)):
-    bolsas.append(int(lista_bolsas[b]))
+  #PARA O ACCEPTED A ENTRADA DEVE SER ITEM A ITEM E NÃO TUDO EM LINHA	
+  for b in range(n):
+    bolsas.append(int(input()))
 
   bolsas.sort() #ordena por tamanho
   casos_teste.append(bolsas)
